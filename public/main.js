@@ -7,6 +7,6 @@
 // for live
 // const MAINURLFORADMIN = 'https://evertsolution.com/crm/admin/'
 // const MAINURLFORUSER = 'https://evertsolution.com/crm/user/'
-const MAINURL='https://evertsolution.com/crm/';
+const MAINURL='http://crm.evertsolution.com/';
 
 
