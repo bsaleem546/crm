@@ -169,8 +169,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="{{ url('public/js/app.js') }}"></script>
     <script src="{{ url('public/main.js') }}"></script>
+    <script src="{{ url('public/js/app.js') }}"></script>
 
     @yield('scripts')
 </body>
