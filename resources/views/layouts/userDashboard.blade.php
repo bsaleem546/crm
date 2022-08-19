@@ -81,7 +81,7 @@
                         <a class="nav-link" style="color: #FFF!important; font-size: 18px; padding: 15px" href="{{ route('users.ticket.index') }}">{{ __('Support Ticket') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color: #FFF!important; font-size: 18px; padding: 15px" href="{{ url('/') }}">{{ __('Open Ticket') }}</a>
+                        <a class="nav-link" style="color: #FFF!important; font-size: 18px; padding: 15px" href="{{ route('user.ticket.create') }}">{{ __('Open Ticket') }}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" style="color: #FFF!important; font-size: 18px; padding: 15px" href="{{ url('/') }}">{{ __('Leads') }}</a>

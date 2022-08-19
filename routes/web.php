@@ -34,6 +34,8 @@ Route::group([ 'prefix' => 'user', 'middleware' => 'auth' ], function (){
 
     Route::get('my-tickets', [\App\Http\Controllers\User\TicketController::class, 'index'])->name('users.ticket.index');
     Route::get('show/{id}', [\App\Http\Controllers\User\TicketController::class, 'edit'])->name('user.ticket.edit');
+    Route::get('create', [\App\Http\Controllers\User\TicketController::class, 'create'])->name('user.ticket.create');
+    Route::post('store', [\App\Http\Controllers\User\TicketController::class, 'store'])->name('user.ticket.store');
 });
 
 
