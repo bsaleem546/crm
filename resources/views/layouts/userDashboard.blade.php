@@ -78,7 +78,7 @@
                         <a class="nav-link" style="color: #FFF!important; font-size: 18px; padding: 15px" href="{{ url('/') }}">{{ __('Home') }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color: #FFF!important; font-size: 18px; padding: 15px" href="{{ route('tickets.index') }}">{{ __('Support Ticket') }}</a>
+                        <a class="nav-link" style="color: #FFF!important; font-size: 18px; padding: 15px" href="{{ route('users.ticket.index') }}">{{ __('Support Ticket') }}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" style="color: #FFF!important; font-size: 18px; padding: 15px" href="{{ url('/') }}">{{ __('Open Ticket') }}</a>
