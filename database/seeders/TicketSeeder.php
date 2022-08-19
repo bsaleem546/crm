@@ -25,6 +25,7 @@ class TicketSeeder extends Seeder
                 'priority' => 'low',
                 'message' => 'random message',
                 'status' => 'pending',
+                'user_id' => 2
             ]);
         }
     }

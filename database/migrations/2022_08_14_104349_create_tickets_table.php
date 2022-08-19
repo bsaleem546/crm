@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('priority');
             $table->text('message');
             $table->string('status');
+            $table->foreignId('user_id')->constrained('users');
             $table->timestamps();
         });
     }

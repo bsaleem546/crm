@@ -16,6 +16,7 @@ class Ticket extends Model
         'service',
         'priority',
         'message',
-        'status'
+        'status',
+        'user_id',
     ];
 }
