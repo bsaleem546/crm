@@ -32,8 +32,8 @@ Route::group([ 'prefix' => 'admin', 'middleware' => 'isAdmin' ], function (){
 Route::group([ 'prefix' => 'user', 'middleware' => 'auth' ], function (){
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'indexUser'])->name('user.home');
 
-    Route::get('my-tickets', [\App\Http\Controllers\Admin\TicketController::class, 'index'])->name('users.ticket.index');
-    Route::get('show/{id}', [\App\Http\Controllers\Admin\TicketController::class, 'edit'])->name('user.ticket.edit');
+    Route::get('my-tickets', [\App\Http\Controllers\User\TicketController::class, 'index'])->name('users.ticket.index');
+    Route::get('show/{id}', [\App\Http\Controllers\User\TicketController::class, 'edit'])->name('user.ticket.edit');
 });
 
 
