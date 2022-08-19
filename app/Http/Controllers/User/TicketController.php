@@ -19,9 +19,11 @@ class TicketController extends Controller
     public function edit($id)
     {
         $data = Ticket::find($id);
-        if ( auth()->user()->id !== $data->user_id ){
+        if ( auth()->user()->id === $data->user_id ){
+            return view('users.ticket.edit', compact('data'));
+        }
+        else{
             return redirect()->back();
         }
-        return view('users.ticket.edit', compact('data'));
     }
 }
