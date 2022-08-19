@@ -1,4 +1,4 @@
-@extends('layouts.adminDashboard')
+@extends('layouts.userDashboard')
 
 @section('title', 'Edit Support Ticket')
 
