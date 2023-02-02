@@ -49,7 +49,7 @@ class UserController extends Controller
                 'website' => 'required|unique:users,website'
             ]);
 
-            $data['password'] = $request->password;
+            $data['password'] = bcrypt($request->password);
 
             User::create($data);
 
@@ -107,7 +107,7 @@ class UserController extends Controller
                 'website' => 'required|unique:users,website'.$id
             ]);
             $user = User::findOrFail($id);
-            $data['password'] = $request->password;
+            $data['password'] = bcrypt($request->password);
             $user->update($data);
             DB::commit();
             return redirect()->route('admin.users.index')
