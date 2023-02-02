@@ -48,7 +48,11 @@ class UserController extends Controller
                 'role' => 'required',
                 'website' => 'required|unique:users,website'
             ]);
+
+            $data['password'] = $request->password;
+
             User::create($data);
+
             DB::commit();
             return redirect()->route('users.index')
                 ->with('success','User created successfully');
@@ -103,6 +107,7 @@ class UserController extends Controller
                 'website' => 'required|unique:users,website'.$id
             ]);
             $user = User::findOrFail($id);
+            $data['password'] = $request->password;
             $user->update($data);
             DB::commit();
             return redirect()->route('admin.users.index')
