@@ -89,7 +89,7 @@
                     {{--                            <a class="nav-link" style="color: #FFF!important; font-size: 18px; padding: 15px" href="{{ url('/') }}">{{ __('Open Ticket') }}</a>--}}
                     {{--                        </li>--}}
                     <li class="nav-item">
-                        <a class="nav-link" style="color: #FFF!important; font-size: 18px; padding: 15px" href="{{ url('/') }}">{{ __('Leads') }}</a>
+                        <a class="nav-link" style="color: #FFF!important; font-size: 18px; padding: 15px" href="{{ route('callrail.accounts') }}">{{ __('Call Rail') }}</a>
                     </li>
                 </ul>
 
@@ -135,7 +135,7 @@
 
         <main class="py-4">
 
-            <div class="container">
+            <div class="px-4">
                 <div class="row justify-content-center">
 
                     <div class="col-md-4">

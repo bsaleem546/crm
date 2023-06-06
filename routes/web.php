@@ -24,9 +24,12 @@ Route::group([ 'prefix' => 'admin', 'middleware' => 'isAdmin' ], function (){
 
     Route::resource('users', \App\Http\Controllers\Admin\UserController::class);
 
-    Route::get('index', [\App\Http\Controllers\Admin\TicketController::class, 'index'])->name('tickets.index');
+    Route::get('ticket', [\App\Http\Controllers\Admin\TicketController::class, 'index'])->name('tickets.index');
     Route::get('edit/{id}', [\App\Http\Controllers\Admin\TicketController::class, 'edit'])->name('tickets.edit');
     Route::post('update/{id}', [\App\Http\Controllers\Admin\TicketController::class, 'update'])->name('tickets.update');
+
+    Route::get('/call-rail/accounts', [\App\Http\Controllers\Admin\CallRailController::class, 'accounts'])->name('callrail.accounts');
+    Route::get('/call-rail/calls/{id}', [\App\Http\Controllers\Admin\CallRailController::class, 'calls'])->name('callrail.calls');
 });
 
 Route::group([ 'prefix' => 'user', 'middleware' => 'auth' ], function (){
